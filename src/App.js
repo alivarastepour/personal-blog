@@ -1,4 +1,4 @@
-
+import './sample.scss'
 function App() {
   return (
     <div className="App">
