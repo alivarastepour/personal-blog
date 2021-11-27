@@ -1,3 +1,17 @@
 .App{
-  color: red;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+  to bottom right,
+  #4affde 0%,
+  #5b9dff 60%,
+  #ff34d2 100%
+  );
+  background-size: 200% 200%;
+  animation: mg 4s linear infinite alternate;
+
+  @keyframes mg {
+    from {background-position: 0 0;}
+    to {background-position: 100% 100%}
+  }
 }
