@@ -23,3 +23,9 @@ yarn-debug.log*
 yarn-error.log*
 /src/react-app-env.d.ts
 /src/sample.css
+/src/assets/general-styles.css
+/src/Components/Header/styles.css
+/src/Components/Introduction/styles.css
+/src/assets/general-styles.css.map
+/src/Components/Header/styles.css.map
+/src/Components/Introduction/styles.css.map
