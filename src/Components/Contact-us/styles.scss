@@ -1,0 +1,6 @@
+@import "../../assets/general-styles";
+
+.glass{
+  @include glassMorphism;
+  border-radius: 12px;
+}
