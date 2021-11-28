@@ -17,7 +17,6 @@ export const Wrapper = styled.div`
   .flex-container {
     display: flex;
     justify-content: space-evenly;
-    
   }
 
   .button {
@@ -26,7 +25,7 @@ export const Wrapper = styled.div`
     background-color: transparent;
     height: 60px;
     width: 150px;
-    border-radius: 10px;
+    border-radius: 12px;
   }
 
   .button:hover {
