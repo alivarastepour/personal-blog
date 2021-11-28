@@ -1,6 +1,27 @@
 @import "../../assets/general-styles";
 
-.glass{
+.glass-contact-us{
+  border-radius: 12px;
+  font-family: 'Raleway', sans-serif;
+}
+.container-header{
+  @include glassMorphism;
+  width: 1500px;
+  height: 100px;
+  text-align: center;
+  margin: 18px;
+  font-size: 3rem;
+  border-radius: 17px;
+  letter-spacing: 10px;
+}
+.container-body-flex{
+  display: flex;
+  flex-wrap: wrap;
+ }
+.container-flex-item{
   @include glassMorphism;
   border-radius: 12px;
+  width: 490px;
+  height: 200px;
+  margin: 10px;
 }
