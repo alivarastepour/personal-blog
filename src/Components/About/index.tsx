@@ -7,7 +7,18 @@ const About = ()=> {
         <Wrapper className='container flex-container'>
             <div className="flex-item-About">
                 <div className="card1-header">My story</div>
-                <div className="card1-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi, aperiam cupiditate dolorem eligendi hic ipsum, laudantium minima, molestiae nesciunt nostrum odio quae ratione rem reprehenderit sunt tempore. A alias consequuntur, et hic impedit in necessitatibus nobis nostrum optio quas quibusdam sint tempore vitae! Beatae, hic, veniam. Cumque, expedita, vitae?</div>
+                <div className="card1-body">
+                    Many years ago s.one convinced me
+                    to learn front-end development basics
+                    and honestly it was a good experience
+                    as my very first step to the world of technology.
+                    then i entered university and started studying
+                    Computer Engineering. there, i learned 2 new languages;
+                    c++ and java; i really didnt like the former, but the latter
+                    was really interesting. after that i decided to learn new technologies
+                    by myself; since then i am learning reactjs and other related front-end
+                    technologies and i'm SUPER happy with them.
+                </div>
             </div>
             <div className="flex-item-About image"></div>
         </Wrapper>
