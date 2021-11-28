@@ -29,3 +29,5 @@ yarn-error.log*
 /src/assets/general-styles.css.map
 /src/Components/Header/styles.css.map
 /src/Components/Introduction/styles.css.map
+/src/Components/About/styles.css
+/src/Components/About/styles.css.map
