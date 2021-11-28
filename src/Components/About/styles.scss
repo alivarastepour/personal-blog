@@ -1,0 +1,10 @@
+@import "../../assets/general-styles";
+
+.card{
+  @include glassMorphism;
+  width: 500px;
+  height: 700px;
+  float: left;
+  margin: 10px;
+  border-radius: 12px;
+}
