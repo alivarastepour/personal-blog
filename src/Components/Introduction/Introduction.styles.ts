@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   height: 700px;  
   max-width: 1600px;
   padding: 100px;
+  border-radius: 12px;
 `;
 export const Logo = styled.img`
   
