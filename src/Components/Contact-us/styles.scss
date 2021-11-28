@@ -6,13 +6,13 @@
 }
 .container-header{
   @include glassMorphism;
-  width: 1500px;
+  width: 1528px;
   height: 100px;
-  text-align: center;
-  margin: 18px;
-  font-size: 3rem;
   border-radius: 17px;
-  letter-spacing: 10px;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  //margin: auto;
 }
 .container-body-flex{
   display: flex;
@@ -24,4 +24,24 @@
   width: 490px;
   height: 200px;
   margin: 10px;
+}
+.socialMedia-wrapper{
+  text-align: center;
+  margin-top: 10%;
+}
+
+.socialMedia-wrapper > a {
+  color: black;
+  text-decoration: none;
+}
+.socialMedia-wrapper > a:hover{
+  transition: 1s;
+  color: rgba(46,46,46,0.75);
+}
+.socialMedia-wrapper > a:not(:hover){
+  transition: 1s;
+  color: black;
+}
+.socialMedia-name {
+  font-size: 1.5rem;
 }
