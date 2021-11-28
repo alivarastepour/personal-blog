@@ -3,7 +3,7 @@ import {Wrapper} from "./Header.styles";
 const Header = () => {
     return <>
         <Wrapper>
-            <div className='container flex-container'>
+            <div className='container flex-container glass'>
                 <button className='flex-item button'>About</button>
                 <button className='flex-item button'>Home</button>
                 <button className='flex-item button'>Contact us</button>

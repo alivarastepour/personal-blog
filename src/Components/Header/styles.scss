@@ -1,0 +1,4 @@
+@import "./src/assets/general-styles";
+.glass{
+  @include glassMorphism
+}
