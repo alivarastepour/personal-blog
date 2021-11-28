@@ -1,10 +1,18 @@
 @import "../../assets/general-styles";
 
+
+.flex-container{
+  display: flex;
+}
 .card{
   @include glassMorphism;
   width: 500px;
   height: 700px;
-  float: left;
   margin: 10px;
   border-radius: 12px;
+}
+.image{
+  background-image: url("../../assets/photo_2021-11-21_23-43-14.jpg");
+  background-position: center;
+  opacity: 55%;
 }
