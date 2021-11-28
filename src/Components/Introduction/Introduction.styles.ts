@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   max-width: 1600px;
   padding: 100px;
   border-radius: 12px;
+  font-family: 'Raleway', sans-serif;
 `;
 export const Logo = styled.img`
   
