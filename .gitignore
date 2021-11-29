@@ -31,3 +31,5 @@ yarn-error.log*
 /src/Components/Introduction/styles.css.map
 /src/Components/About/styles.css
 /src/Components/About/styles.css.map
+/src/Components/Contact-us/styles.css
+/src/Components/Contact-us/styles.css.map
