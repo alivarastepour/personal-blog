@@ -29,18 +29,26 @@
   margin-top: 10%;
 }
 
-.socialMedia-wrapper > a {
+.socialMedia-wrapper > button {
   color: black;
   text-decoration: none;
+  border: none;
+  background-color: transparent;
 }
-.socialMedia-wrapper > a:hover{
+.socialMedia-wrapper > button:hover, .socialMedia-wrapper > a:hover{
   transition: 1s;
   color: rgba(46,46,46,0.75);
 }
-.socialMedia-wrapper > a:not(:hover){
+.socialMedia-wrapper > button:not(:hover), .socialMedia-wrapper > a:not(:hover){
   transition: 1s;
   color: black;
 }
+
+.socialMedia-wrapper > a {
+  text-decoration: none;
+  color: black;
+}
+
 .socialMedia-name {
   font-size: 1.5rem;
 }
