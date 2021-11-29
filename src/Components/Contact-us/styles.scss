@@ -52,3 +52,14 @@
 .socialMedia-name {
   font-size: 1.5rem;
 }
+.msg{
+  color: #5c5c5c;
+}
+.msg-show{
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+.msg-hide {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
