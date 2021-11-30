@@ -1,0 +1,21 @@
+@import '../../sample.scss';
+@import "../../assets/general-styles";
+
+.wrapper {
+  @include background;
+  height: 100vh;
+}
+.content{
+  margin: auto;
+}
+.temp{
+  color: black;
+}
+.welcome-text{
+  @include glassMorphism;
+  width: 600px;
+  height: 100px;
+  border-radius: 12px;
+  font-size: 2rem;
+  padding-left: 10px;
+}
