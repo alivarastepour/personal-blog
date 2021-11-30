@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   font-size: 1.4rem;
 
   .container {
-    max-width: 700px;
+    max-width: 800px;
     border-radius: 12px;
   }
 
@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
     border: none;
     background-color: transparent;
     height: 60px;
-    width: 150px;
+    width: 180px;
     border-radius: 12px;
   }
 
