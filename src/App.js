@@ -1,19 +1,28 @@
 import './sample.scss'
-import { lazy, Suspense } from 'react';
-import Introduction from "./Components/Introduction";
-import About from "./Components/About";
-import ContactUs from "./Components/Contact-us";
-import Footer from "./Components/Footer";
-const Header = lazy(() => import('./Components/Header/index'))
+import Spinner from "./Components/Spinner";
+import {lazy, Suspense, useState} from "react";
+const Header = lazy(() => import('./Components/Header'));
+const About = lazy(() => import('./Components/About'));
+const ContactUs = lazy(() => import('./Components/Contact-us'));
+const Footer = lazy(() => import('./Components/Footer'));
+const Introduction = lazy(() => import('./Components/Introduction'));
+
 function App() {
+    const [loading, setLoading] = useState(true);
   return<>
-      <div className='App'>
-          <Header/>
-          <Introduction/>
-          <About/>
-          <ContactUs/>
-          <Footer/>
-      </div>
+          <Suspense fallback={<Spinner/>}>
+              <div className='App'>
+              <Header/>
+              <Introduction/>
+              <About/>
+              <ContactUs/>
+              <Footer/>
+              </div>
+          </Suspense>
+
+      {/*<div className='App'>*/}
+      {/*    <Spinner/>*/}
+      {/*</div>*/}
     </>
   ;
 }
