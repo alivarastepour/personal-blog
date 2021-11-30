@@ -1,10 +1,10 @@
 @import "../../assets/general-styles";
 
-.glass-contact-us{
+.glass-contact-us {
   border-radius: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-.container-header{
+.container-header {
   @include glassMorphism;
   width: 1528px;
   height: 100px;
@@ -13,18 +13,18 @@
   font-size: 3rem;
   letter-spacing: 3px;
 }
-.container-body-flex{
+.container-body-flex {
   display: flex;
   flex-wrap: wrap;
- }
-.container-flex-item{
+}
+.container-flex-item {
   @include glassMorphism;
   border-radius: 12px;
   width: 490px;
   height: 200px;
   margin: 10px;
 }
-.socialMedia-wrapper{
+.socialMedia-wrapper {
   text-align: center;
   margin-top: 10%;
 }
@@ -35,11 +35,13 @@
   border: none;
   background-color: transparent;
 }
-.socialMedia-wrapper > button:hover, .socialMedia-wrapper > a:hover{
+.socialMedia-wrapper > button:hover,
+.socialMedia-wrapper > a:hover {
   transition: 1s;
-  color: rgba(46,46,46,0.75);
+  color: rgba(46, 46, 46, 0.75);
 }
-.socialMedia-wrapper > button:not(:hover), .socialMedia-wrapper > a:not(:hover){
+.socialMedia-wrapper > button:not(:hover),
+.socialMedia-wrapper > a:not(:hover) {
   transition: 1s;
   color: black;
 }
@@ -52,10 +54,10 @@
 .socialMedia-name {
   font-size: 1.5rem;
 }
-.msg{
+.msg {
   color: #5c5c5c;
 }
-.msg-show{
+.msg-show {
   transition: all 0.5s ease-in-out;
   opacity: 1;
 }

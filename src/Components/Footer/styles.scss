@@ -1,10 +1,10 @@
 @import "../../assets/general-styles";
 
-.glass-footer{
+.glass-footer {
   @include glassMorphism;
   border-radius: 7px 7px 0 0;
 }
-.info{
+.info {
   text-align: center;
   font-size: 1.6rem;
 }
@@ -12,13 +12,13 @@
   display: inline;
   padding-right: 5px;
 }
-.animate{
+.animate {
   animation: x linear 7s infinite;
-  @keyframes  x{
+  @keyframes x {
     0% {
       transform: rotate(0deg);
     }
-    100%{
+    100% {
       transform: rotate(360deg);
     }
   }

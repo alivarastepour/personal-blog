@@ -1,13 +1,13 @@
 @import "./src/assets/general-styles";
-.glass{
-  @include glassMorphism
+.glass {
+  @include glassMorphism;
 }
-.details{
+.details {
   font-size: 2rem;
 }
-.link{
+.link {
   color: inherit;
 }
-.link:hover{
+.link:hover {
   color: inherit;
 }

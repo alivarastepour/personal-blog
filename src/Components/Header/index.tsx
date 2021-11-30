@@ -4,6 +4,7 @@ const Header = () => {
     return <>
         <Wrapper>
             <div className='container flex-container glass'>
+                <button className="flex-item button">change theme</button>
                 <button className='flex-item button'>About</button>
                 <button className='flex-item button'>Home</button>
                 <button className='flex-item button'>Contact us</button>
