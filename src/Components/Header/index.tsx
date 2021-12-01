@@ -1,6 +1,10 @@
 import {Wrapper} from "./Header.styles";
 import './styles.scss';
+import {useDispatch} from "react-redux";
+import {changeTheme} from "../../globalStates/slice";
+
 const Header = () => {
+    const dispatch = useDispatch();
     return <>
         <Wrapper>
             <div className='container flex-container glass-header'>
@@ -16,9 +20,9 @@ const Header = () => {
                 <div className="drop-down">
                     <button className="dropbtn flex-item button">theme</button>
                         <div className="drop-down-content">
-                            <button className="drop-down-button light">Light</button>
-                            <button className="drop-down-button dark">Dark</button>
-                            <button className="drop-down-button default">Default</button>
+                            <button onClick={() => dispatch(changeTheme('LIGHT'))} className="drop-down-button light">Light</button>
+                            <button onClick={() => dispatch(changeTheme('DARK'))} className="drop-down-button dark">Dark</button>
+                            <button onClick={() => dispatch(changeTheme('DEFAULT'))} className="drop-down-button default">Default</button>
                         </div>
                 </div>
             </div>
