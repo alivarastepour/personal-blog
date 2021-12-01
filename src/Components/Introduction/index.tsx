@@ -1,4 +1,4 @@
-import {Wrapper, Logo} from "./Introduction.styles";
+import {Wrapper} from "./Introduction.styles";
 import './styles.scss';
 
 const Introduction = ()=> {
