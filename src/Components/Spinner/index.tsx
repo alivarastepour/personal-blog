@@ -5,7 +5,6 @@ import {quotes} from "./text-data";
 
 const Spinner = () => {
     const rand = Math.floor(Math.random() * 1000) % 5;
-    console.log(rand)
     const value = quotes[rand];
     return <>
         <Wrapper className='wrapper'>
