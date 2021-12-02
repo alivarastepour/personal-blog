@@ -1,11 +1,5 @@
 @mixin background{
   width: 100%;
-  background-image: linear-gradient(
-    to bottom right,
-    #4affde 0%,
-    #5b9dff 60%,
-    #ff34d2 100%
-  );
   background-size: 200% 200%;
   background-attachment: fixed;
   animation: mg 4s linear infinite alternate;
@@ -19,6 +13,40 @@
     }
   }
 }
-.App{
+@mixin colorEffectDark {
+  background-image: linear-gradient(
+    to bottom right,
+    #363636 0%,
+    #1c1c1c 60%,
+    black 100%
+  );
+}
+@mixin colorEffectDefault {
+  background-image: linear-gradient(
+    to bottom right,
+    #4affde 0%,
+    #5b9dff 60%,
+    #ff34d2 100%
+  );
+}
+@mixin colorEffectLight {
+  background-image: linear-gradient(
+    to bottom right,
+    #9cffee 0%,
+    #a8bfe6 60%,
+    white 100%
+  );
+}
+
+.App-Light{
   @include background;
+  @include colorEffectLight;
+}
+.App-Dark{
+  @include background;
+  @include colorEffectDark;
+}
+.App-Default{
+  @include background;
+  @include colorEffectDefault;
 }
