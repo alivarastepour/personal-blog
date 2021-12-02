@@ -6,8 +6,8 @@ export const mySlice = createSlice({
         value: 'DEFAULT'
     },
     reducers : {
-        changeTheme : (state, newValue) => {
-            state.value = newValue
+        changeTheme : (state, action) => {
+            state.value = action.payload
         }
     }
 })
