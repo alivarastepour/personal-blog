@@ -8,8 +8,8 @@ const Spinner = () => {
     const value = quotes[rand];
     const theme = localStorage.getItem('theme')?.toLowerCase();    
     return <>
-        <Wrapper className={`wrapper ${theme ? theme === 'dark' ? `wrapper-dark` : theme === 'light' ? `wrapper-light` : `wrapper-default` : ''}`}>
-                <Content className={`content content-${theme}`}/>
+        <Wrapper className={`wrapper ${theme ? `wrapper-${theme}` : `wrapper-default`}`}>
+                <Content className={`content ${theme ? `content-${theme}` : `content-default`}`}/>
             <div className='welcome-text'>
                 <div className='text'>{value.text}</div>
                 <blockquote className='blockquote'>{value.name}</blockquote>

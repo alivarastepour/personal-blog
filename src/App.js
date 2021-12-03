@@ -12,7 +12,7 @@ function App() {
     const theme = useSelector((state => state.theme.value))?.toLowerCase();
     return<>
             <Suspense fallback={<Spinner/>}>
-                <div className={theme === 'light' ? 'App App-Light' : theme === 'dark' ? 'App App-Dark' : 'App App-Default'}>
+                <div className={`App ${theme ? `App-${theme}` : `App-default`}`}>
                     <Header/>
                     <Introduction/>
                     <About/>

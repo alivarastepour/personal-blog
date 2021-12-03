@@ -39,15 +39,15 @@
   );
 }
 
-.App-Light{
+.App-light{
   @include background;
   @include colorEffectLight;
 }
-.App-Dark{
+.App-dark{
   @include background;
   @include colorEffectDark;
 }
-.App-Default{
+.App-default{
   @include background;
   @include colorEffectDefault;
 }
