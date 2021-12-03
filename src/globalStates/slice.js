@@ -3,11 +3,12 @@ import {createSlice} from "@reduxjs/toolkit";
 export const mySlice = createSlice({
     name: 'theme',
     initialState: {
-        value: 'DEFAULT'
+        value: localStorage.getItem('theme')
     },
     reducers : {
         changeTheme : (state, action) => {
-            state.value = action.payload
+            state.value = action.payload;
+            localStorage.setItem('theme', action.payload);
         }
     }
 })

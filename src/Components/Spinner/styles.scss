@@ -3,8 +3,16 @@
 
 .wrapper {
   @include background;
-  @include colorEffectDefault; 
   height: 100vh;
+}
+.wrapper-default{
+  @include colorEffectDefault;
+}
+.wrapper-light{
+  @include colorEffectLight;
+}
+.wrapper-dark{
+  @include colorEffectDark;
 }
 .content{
   margin: auto;

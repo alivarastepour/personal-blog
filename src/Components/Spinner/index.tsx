@@ -6,8 +6,9 @@ import {quotes} from "./text-data";
 const Spinner = () => {
     const rand = Math.floor(Math.random() * 1000) % 5;
     const value = quotes[rand];
+    const theme = 'wrapper-' + localStorage.getItem('theme')?.toLowerCase();    
     return <>
-        <Wrapper className='wrapper'>
+        <Wrapper className={`wrapper ${theme}`}>
                 <Content className='content'/>
             <div className='welcome-text'>
                 <div className='text'>{value.text}</div>
