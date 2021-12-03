@@ -2,3 +2,10 @@
 .glass-header, .drop-down-content{
   @include glassMorphism;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: black;
+}
