@@ -9,10 +9,10 @@ const ContactUs = lazy(() => import('./Components/Contact-us'));
 const Footer = lazy(() => import('./Components/Footer'));
 const Introduction = lazy(() => import('./Components/Introduction'));
 function App() {
-    const theme = useSelector((state => state.theme.value)).toLowerCase();
+    const theme = useSelector((state => state.theme.value))?.toLowerCase();
     return<>
             <Suspense fallback={<Spinner/>}>
-                <div className={theme === 'default' ? 'App App-Default' : theme === 'dark' ? 'App App-Dark' : 'App App-Light'}>
+                <div className={theme === 'light' ? 'App App-Light' : theme === 'dark' ? 'App App-Dark' : 'App App-Default'}>
                     <Header/>
                     <Introduction/>
                     <About/>
