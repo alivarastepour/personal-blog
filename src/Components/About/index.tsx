@@ -4,7 +4,7 @@ import './styles.scss'
 
 const About = ()=> {
     return <>
-        <Wrapper className='container flex-container'>
+        <Wrapper className='container flex-container-about'>
             <div className="flex-item-About">
                 <div className="card1-header">My story</div>
                 <div className="card1-body">
