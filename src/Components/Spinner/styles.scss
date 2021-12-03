@@ -3,6 +3,7 @@
 
 .wrapper {
   @include background;
+  @include colorEffectDefault; 
   height: 100vh;
 }
 .content{
