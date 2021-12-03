@@ -3,6 +3,9 @@ export const Wrapper = styled.div`
 
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
+  position: sticky ;
+  top: 0 ;
+  z-index : 10 ;
 
   .container {
     max-width: 800px;
