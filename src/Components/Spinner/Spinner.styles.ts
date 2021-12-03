@@ -10,8 +10,6 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
     width: 100px;
     height: 100px;
-    border-top: 4px #30508c solid;
-    border-right: 4px #3e598c solid;
     border-bottom: none ;
     animation: 3s spin infinite linear;
     border-radius: 50% ;

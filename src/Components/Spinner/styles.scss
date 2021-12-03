@@ -17,6 +17,14 @@
 .content{
   margin: auto;
 }
+.content-dark {
+  border-top: 4px #dee4ee solid;
+  border-right: 4px #dee4ee solid;
+}
+.content-light, .content-default{
+  border-top: 4px #3362bb solid;
+  border-right: 4px #3362bb solid;
+}
 .temp{
   color: black;
 }
