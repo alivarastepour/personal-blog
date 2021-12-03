@@ -3,7 +3,7 @@ import './styles.scss';
 
 const Introduction = ()=> {
     return <>
-        <Wrapper className='container glass grid-container'>
+        <Wrapper id="intro" className='container glass grid-container'>
             <div className='grid-item content'>
                 <h1 className='display-2 header'>Welcome to my personal blog !</h1>
                 <div className='details'>

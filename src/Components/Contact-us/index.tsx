@@ -11,7 +11,7 @@ const ContactUs = () => {
     const [show1, setShow1] = useState(false);
 
     return <>
-        <Wrapper className='container glass-contact-us'>
+        <Wrapper id="contact-us" className='container glass-contact-us'>
             <div className='container-body-flex'>
                 <div className='container-header'>Let's be in touch !</div>
                 {

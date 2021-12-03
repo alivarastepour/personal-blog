@@ -9,13 +9,13 @@ const Header = () => {
         <Wrapper>
             <div className='container flex-container glass-header'>
                 <div>
-                <button className='flex-item button'>Home</button>
+                <button className='flex-item button'><a href="#intro">Home</a></button>
                 </div>
                 <div>
-                <button className='flex-item button'>About</button>
+                <button className='flex-item button'><a href="#about">About</a></button>
                 </div>
                 <div>
-                <button className='flex-item button'>Contact us</button>
+                <button className='flex-item button'><a href="#contact-us">contact us</a></button>
                 </div>
                 <div className="drop-down">
                     <button className="dropbtn flex-item button">theme</button>
