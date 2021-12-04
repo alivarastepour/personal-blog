@@ -16,32 +16,6 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-evenly;
   }
-  @media only screen and (max-width:768px) {
-    .flex-container{
-      display: block;
-    }
-    .holder-r{
-      display: flex;
-      flex-wrap: wrap ;
-      flex-direction: column;
-      align-items: center ;
-    }
-    .drop-down-content{
-      position: relative ;
-      top: 240px ;
-      width: 100% ;
-    }
-    .drop-down-button{
-      margin: auto ;
-    }
-    .drop-down-button:hover{
-      border-radius: 7px ;
-    }
-    & {
-      position: relative; 
-    }
-  }
-
   .button {
     outline: none;
     border: none;
@@ -92,5 +66,30 @@ export const Wrapper = styled.div`
   }
   .drop-down-button:not(:hover) {
     transition: 0.4s;
+  }
+  @media only screen and (max-width:768px) {
+    .flex-container{
+      display: block;
+    }
+    .holder-r{
+      display: flex;
+      flex-wrap: wrap ;
+      flex-direction: column;
+      align-items: center ;
+    }
+    .drop-down-content{
+      // position: relative ;
+      // width: 100% ;
+      top : 240px ;
+    }
+    .drop-down-button{
+      margin: auto ;
+    }
+    .drop-down-button:hover{
+      border-radius: 7px ;
+    }
+    & {
+      position: relative; 
+    }
   }
 `;
