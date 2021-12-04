@@ -16,6 +16,28 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-evenly;
   }
+  @media only screen and (max-width:768px) {
+    .flex-container{
+      display: block;
+    }
+    .holder-r{
+      display: flex;
+      flex-wrap: wrap ;
+      flex-direction: column;
+      align-items: center ;
+    }
+    .drop-down-content{
+      position: relative ;
+      top: 240px ;
+      width: 100% ;
+    }
+    .drop-down-button{
+      margin: auto ;
+    }
+    .drop-down-button:hover{
+      border-radius: 7px ;
+    }
+  }
 
   .button {
     outline: none;
