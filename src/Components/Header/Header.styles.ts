@@ -37,6 +37,9 @@ export const Wrapper = styled.div`
     .drop-down-button:hover{
       border-radius: 7px ;
     }
+    & {
+      position: relative; 
+    }
   }
 
   .button {
