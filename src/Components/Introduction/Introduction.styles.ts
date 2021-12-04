@@ -7,7 +7,8 @@ export const Wrapper = styled.div`
   padding: 100px;
   border-radius: 12px;
   font-family: 'Raleway', sans-serif;
-`;
-export const Logo = styled.img`
-  
+
+  @media only screen and (max-width: 750px){
+    padding : 30px ;
+  }
 `;
