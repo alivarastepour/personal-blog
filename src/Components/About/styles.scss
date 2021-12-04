@@ -5,7 +5,7 @@
 }
 .flex-item-About {
   @include glassMorphism;
-  width: 1000px;
+  width: 66%;
   height: 700px;
   margin: 10px;
   padding-left: 20px;
@@ -13,7 +13,7 @@
   border-radius: 12px;
 }
 .image {
-  width: 500px;
+  width: 33%;
   background-image: url("../../assets/photo_2021-11-21_23-43-14.jpg");
   background-position: center;
   opacity: 65%;
@@ -25,4 +25,25 @@
 .card1-body {
   font-size: 2.2rem;
   text-align: justify;
+}
+@media only screen and (max-width:1400px){
+  .flex-container-about{
+    flex-direction: column;
+  }
+  .flex-item-About{
+    width: 100% ;
+  }
+  .flex-container-about{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width:1000px){
+  .flex-item-About > .card1-body{
+    font-size: 1.6rem;
+  }
+  .flex-container-about{
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

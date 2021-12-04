@@ -1,5 +1,4 @@
 import {Wrapper} from "./About.styles";
-import React from "react";
 import './styles.scss'
 
 const About = ()=> {
