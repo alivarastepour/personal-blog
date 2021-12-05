@@ -9,11 +9,13 @@ export const Wrapper = styled.div`
   font-family: 'Raleway', sans-serif;
 
   @media only screen and (max-width: 750px){
-    padding : 30px ;
+    &{
+      padding : 30px ;
+    }
   }
   @media only screen and (max-width: 460px){
     & {
-      padding: 5px ;
+      padding: 20px ;
     }
     .details{
       font-size: 1.65rem ;
