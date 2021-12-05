@@ -70,3 +70,18 @@
 .container-flex-item:hover {
   transform: translateY(0.2rem);
 }
+@media only screen and (max-width: 1650px) {
+  .container-body-flex{
+    justify-content: center;
+  }
+  .container-flex-item{
+    width: 200px;
+    height: 150px;
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container-header{
+    font-size: 2rem;
+  }
+}
