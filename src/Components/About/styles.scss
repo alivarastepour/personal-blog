@@ -42,8 +42,9 @@
   .flex-item-About > .card1-body{
     font-size: 1.6rem;
   }
-  .flex-container-about{
-    margin-left: 0;
-    margin-right: 0;
+}
+@media only screen and (max-width: 460px){
+  .flex-item-About > .card1-body{
+    font-size: 1.1rem;
   }
 }
