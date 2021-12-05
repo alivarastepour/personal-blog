@@ -30,9 +30,14 @@
 }
 .welcome-text{
   @include glassMorphism;
-  width: 600px;
+  max-width: 600px;
   height: 100px;
   border-radius: 12px;
   font-size: 1.5rem;
   padding-left: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .welcome-text{
+    font-size: 1.3rem;
+  }
 }
