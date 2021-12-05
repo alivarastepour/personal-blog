@@ -33,9 +33,8 @@
   .flex-item-About{
     width: 100% ;
   }
-  .flex-container-about{
-    margin-left: 0;
-    margin-right: 0;
+  #about {
+    margin-left: -10px;
   }
 }
 @media only screen and (max-width:1000px){
