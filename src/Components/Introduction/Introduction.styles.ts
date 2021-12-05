@@ -11,4 +11,12 @@ export const Wrapper = styled.div`
   @media only screen and (max-width: 750px){
     padding : 30px ;
   }
+  @media only screen and (max-width: 460px){
+    & {
+      padding: 5px ;
+    }
+    .details{
+      font-size: 1.65rem ;
+    }
+  }
 `;
