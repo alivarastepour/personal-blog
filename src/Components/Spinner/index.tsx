@@ -12,7 +12,8 @@ const Spinner = () => {
                 <Content className={`content ${theme ? `content-${theme}` : `content-default`}`}/>
             <div className='welcome-text'>
                 <div className='text'>{value.text}</div>
-                <blockquote className='blockquote'>{value.name}</blockquote>
+                <br />
+                <blockquote className='blockquote-footer'>{value.name}</blockquote>
             </div>
         </Wrapper>
     </>
