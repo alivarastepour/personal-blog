@@ -47,3 +47,8 @@
     font-size: 1.27rem;
   }
 }
+@media only screen and (max-width: 330px){
+  .flex-item-About > .card1-body{
+    font-size: 1.20rem;
+  }
+}
