@@ -18,7 +18,7 @@ const Header = () => {
                 <button className='flex-item button'><a href="#contact-us">contact us</a></button>
                 </div>
                 <div className="holder-r">
-                <button className='flex-item button'><a download>Resume</a></button>
+                <button className='flex-item button'><a href='https://drive.google.com/file/d/1-brDEJyYatceHoFlw_SyJku0VR0Ix0w0/view?usp=sharing' target='_blank'>Resume</a></button>
                 </div>
                 <div className="drop-down holder-r">
                     <button className="dropbtn flex-item button">theme</button>
