@@ -37,10 +37,10 @@
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
-  bottom: 1px;
+  bottom: 0;
 }
 @media only screen and (max-width: 500px) {
   .welcome-text{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
