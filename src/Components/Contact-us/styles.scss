@@ -94,3 +94,15 @@
     font-size: 1rem;
   }
 }
+@media only screen and (max-width: 330px){
+  .container-flex-item{
+    width: 80px;
+    height: 80px;
+  }
+  .socialMedia-name{
+    display: none;
+  }
+  .msg{
+    font-size: 0.4rem;
+  }
+}
