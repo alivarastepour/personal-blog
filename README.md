@@ -8,6 +8,4 @@ npm install
 ```
 npm start
 ```
-or for easier access here is a link of project deployed on netlify:
-
-https://alivarastepour.netlify.app/
+i haven't deployed it on an actuall domain yet and there are some problems with netlify depolying tool. so as soon as i got myself a new domain, i will put the link below for faster access
