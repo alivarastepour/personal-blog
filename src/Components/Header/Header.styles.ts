@@ -78,7 +78,7 @@ export const Wrapper = styled.div`
       align-items: center ;
     }
     .drop-down-content{
-      top : 240px ;
+      top : 300px ;
     }
     .drop-down-button{
       margin: auto ;
