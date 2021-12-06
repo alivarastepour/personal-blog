@@ -13,7 +13,7 @@ const ContactUs = () => {
     return <>
         <Wrapper id="contact-us" className='container glass-contact-us'>
             <div className='container-body-flex'>
-                <div className='container-header'>Let's be in touch !</div>
+                <div className='container-header'>Let's stay in touch</div>
                 {
                     socialMedias.map(acc => {
                         return <div
