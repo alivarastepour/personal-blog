@@ -78,8 +78,6 @@ export const Wrapper = styled.div`
       align-items: center ;
     }
     .drop-down-content{
-      // position: relative ;
-      // width: 100% ;
       top : 240px ;
     }
     .drop-down-button{
