@@ -17,6 +17,9 @@ const Header = () => {
                 <div className="holder-r">
                 <button className='flex-item button'><a href="#contact-us">contact us</a></button>
                 </div>
+                <div className="holder-r">
+                <button className='flex-item button'><a download>Resume</a></button>
+                </div>
                 <div className="drop-down holder-r">
                     <button className="dropbtn flex-item button">theme</button>
                         <div className="drop-down-content">

@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   z-index : 10 ;
 
   .container {
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 12px;
   }
 
