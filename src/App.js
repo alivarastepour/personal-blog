@@ -22,7 +22,6 @@ function App() {
     }
 
     const theme = useSelector((state => state.theme.value))?.toLowerCase();
-    
     useEffect(() => {
         doFetch();
     },[])

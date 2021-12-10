@@ -30,8 +30,8 @@ const Header = () => {
                 <div className="drop-down holder-r">
                     <button className="dropbtn flex-item button">{content['Language']['Title']}</button>
                         <div className="drop-down-content l">
-                            <button onClick={() => setLanguage('persian')} className="drop-down-button">{content['Language']['Persian']}</button>
-                            <button onClick={() => setLanguage('english')} className="drop-down-button">{content['Language']['English']}</button>
+                            <button onClick={() => setLanguage('IR')} className="drop-down-button">{content['Language']['Persian']}</button>
+                            <button onClick={() => setLanguage('not-IR')} className="drop-down-button">{content['Language']['English']}</button>
                         </div>
                 </div>
                 <div className="drop-down holder-r">
