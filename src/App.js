@@ -1,6 +1,6 @@
 import './sample.scss'
 import Spinner from "./Components/Spinner";
-import {lazy, Suspense} from "react";
+import {createContext, lazy, Suspense, useEffect, useState} from "react";
 import {useSelector} from "react-redux";
 
 const Header = lazy(() => import('./Components/Header'));
@@ -8,17 +8,29 @@ const About = lazy(() => import('./Components/About'));
 const ContactUs = lazy(() => import('./Components/Contact-us'));
 const Footer = lazy(() => import('./Components/Footer'));
 const Introduction = lazy(() => import('./Components/Introduction'));
+
+export const languageContext = createContext();
 function App() {
+    const [language, setLanguage] = useState('hello world');
     const theme = useSelector((state => state.theme.value))?.toLowerCase();
+
+
+    // useEffect(() => {
+    //     fetchData
+    // })
+
+
     return<>
             <Suspense fallback={<Spinner/>}>
-                <div className={`App ${theme ? `App-${theme}` : `App-default`}`}>
-                    <Header/>
-                    <Introduction/>
-                    <About/>
-                    <ContactUs/>
-                    <Footer/>
-                </div>
+                <languageContext.Provider value={{language, setLanguage}}>
+                    <div className={`App ${theme ? `App-${theme}` : `App-default`}`}>
+                        <Header/>
+                        <Introduction/>
+                        <About/>
+                        <ContactUs/>
+                        <Footer/>
+                    </div>
+                </languageContext.Provider>
             </Suspense>
     </>
   ;
