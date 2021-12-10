@@ -67,7 +67,7 @@ export const Wrapper = styled.div`
   .drop-down-button:not(:hover) {
     transition: 0.4s;
   }
-  @media only screen and (max-width:768px) {
+  @media only screen and (max-width:1000px) {
     .flex-container{
       display: block;
     }
@@ -77,8 +77,11 @@ export const Wrapper = styled.div`
       flex-direction: column;
       align-items: center ;
     }
-    .drop-down-content{
-      top : 300px ;
+    .l{
+      top: 300px;
+    }
+    .t{
+      top : 360px;
     }
     .drop-down-button{
       margin: auto ;

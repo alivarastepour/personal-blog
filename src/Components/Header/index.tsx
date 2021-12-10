@@ -25,14 +25,14 @@ const Header = () => {
                 </div>
                 <div className="drop-down holder-r">
                     <button className="dropbtn flex-item button">language</button>
-                        <div className="drop-down-content">
+                        <div className="drop-down-content l">
                             <button onClick={() => setLanguage('persian')} className="drop-down-button">Persian</button>
                             <button onClick={() => setLanguage('english')} className="drop-down-button">English</button>
                         </div>
                 </div>
                 <div className="drop-down holder-r">
                     <button className="dropbtn flex-item button">theme</button>
-                        <div className="drop-down-content">
+                        <div className="drop-down-content t">
                             <button onClick={() => dispatch(changeTheme('LIGHT'))} className="drop-down-button light">Light</button>
                             <button onClick={() => dispatch(changeTheme('DARK'))} className="drop-down-button dark">Dark</button>
                             <button onClick={() => dispatch(changeTheme('DEFAULT'))} className="drop-down-button default">Default</button>
