@@ -6,7 +6,8 @@ export const Wrapper = styled.div`
   max-width: 1600px;
   padding: 100px;
   border-radius: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', 'Tanha', sans-serif;
+
 
   @media only screen and (max-width: 750px){
     &{
