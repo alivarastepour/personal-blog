@@ -1,24 +1,22 @@
 import './sample.scss'
 import Spinner from "./Components/Spinner";
-import {createContext, lazy, Suspense, useEffect, useState} from "react";
+import {createContext, lazy, Suspense, useState} from "react";
 import {useSelector} from "react-redux";
+import useFetch from './custom-hooks/useFetch';
 
 const Header = lazy(() => import('./Components/Header'));
 const About = lazy(() => import('./Components/About'));
 const ContactUs = lazy(() => import('./Components/Contact-us'));
 const Footer = lazy(() => import('./Components/Footer'));
 const Introduction = lazy(() => import('./Components/Introduction'));
+const URL = 'https://geo.ipify.org/api/v2/country?apiKey=at_vWj6GggURobnxNbvqBwg8heA5ewma';
 
 export const languageContext = createContext();
 function App() {
     const [language, setLanguage] = useState('hello world');
     const theme = useSelector((state => state.theme.value))?.toLowerCase();
-
-
-    // useEffect(() => {
-    //     fetchData
-    // })
-
+    const {value} = useFetch(URL);
+    console.log(value);
 
     return<>
             <Suspense fallback={<Spinner/>}>
