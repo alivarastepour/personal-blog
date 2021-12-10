@@ -14,7 +14,7 @@ const Header = () => {
     const dispatch = useDispatch();
     return <>
         <Wrapper>
-            <div className='container flex-container glass-header'>
+            <div className={`container flex-container glass-header ${isPersian ? `dirR` : `dirL`}`}>
                 <div className="holder-r">
                 <button className='flex-item button'><a href="#intro">{content['Home']}</a></button>
                 </div>

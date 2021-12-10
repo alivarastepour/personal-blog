@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const Wrapper = styled.div`
 
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', 'Tanha', sans-serif;
   font-size: 1.4rem;
   position: sticky ;
   top: 0 ;
@@ -10,6 +10,12 @@ export const Wrapper = styled.div`
   .container {
     max-width: 1100px;
     border-radius: 12px;
+  }
+  .dirR{
+    direction: rtl;
+  }
+  .dirL{
+    direction: ltr;
   }
 
   .flex-container {
