@@ -1,19 +1,18 @@
+import { useContext } from "react";
 import {Wrapper} from "./Introduction.styles";
 import './styles.scss';
+import { languageContext } from "../../App";
+import {en, fa} from './Introduction.text'
 
 const Introduction = ()=> {
+    const {language, setLanguage} = useContext(languageContext);
+    const isPersian = language === 'IR';
+    const content = isPersian ? fa : en ;   
     return <>
-        <Wrapper id="intro" className='container glass grid-container'>
+        <Wrapper id="intro" className={`container glass grid-container ${isPersian ? 'dirR' : 'dirL'}`}>
             <div className='grid-item content'>
-                <h1 className='display-2 header'>Welcome to my personal blog !</h1>
-                <div className='details'>
-                    Hi everyone. My name is Ali Varaste Pour. I am a student at {}
-                    <a target='_blank' className='link' href="https://www.sbu.ac.ir/" rel='noreferrer'>Shahid beheshti university of Tehran</a>.
-                      I spend my time mostly on learning new stuff; As i am young and passionate, im trying to find my area of expertise; Like they say:
-                    <br/>
-                    <br/>
-                    <blockquote className='blockquote-footer'>i'm practically new around so don't bother</blockquote>
-                </div>
+                <h1 className='display-2 header'>{content['Title']}</h1>
+                <div className='details'>{content['Paragraph']}</div>
             </div>
         </Wrapper>
     </>
