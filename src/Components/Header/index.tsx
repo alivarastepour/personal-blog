@@ -2,8 +2,11 @@ import {Wrapper} from "./Header.styles";
 import './styles.scss';
 import {useDispatch} from "react-redux";
 import {changeTheme} from "../../globalStates/slice";
-
+import { languageContext } from "../../App";
+import { useContext } from "react";
 const Header = () => {
+    const {language, setLanguage} = useContext(languageContext);
+    
     const dispatch = useDispatch();
     return <>
         <Wrapper>
@@ -19,6 +22,13 @@ const Header = () => {
                 </div>
                 <div className="holder-r">
                 <button className='flex-item button'><a rel='noreferrer' href='https://drive.google.com/file/d/1-brDEJyYatceHoFlw_SyJku0VR0Ix0w0/view?usp=sharing' target='_blank'>Resume</a></button>
+                </div>
+                <div className="drop-down holder-r">
+                    <button className="dropbtn flex-item button">language</button>
+                        <div className="drop-down-content">
+                            <button onClick={() => setLanguage('persian')} className="drop-down-button">Persian</button>
+                            <button onClick={() => setLanguage('english')} className="drop-down-button">English</button>
+                        </div>
                 </div>
                 <div className="drop-down holder-r">
                     <button className="dropbtn flex-item button">theme</button>
