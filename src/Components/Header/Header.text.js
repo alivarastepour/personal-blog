@@ -26,9 +26,9 @@ export const fa = {
         'Persian':'فارسی'
     },
     'Theme':{
-        'Title':'چشم هایت',
-        'Default':'عصر پاییز',
+        'Title':'زمینه',
+        'Default':'آرامش',
         'Dark':'سیاهی شب',
-        'Light':'روز روشن'
+        'Light':'روشنایی روز'
     }
 }
