@@ -42,7 +42,7 @@ const ContactUs = () => {
                                             </i></div>
                                             <div className='socialMedia-name'>{acc.name}</div>
                                             <div
-                                                className={acc.name === 'Telegram' || acc.name === 'تلگرام' && show ? 'msg msg-show' : acc.name === 'Gmail' || acc.name === 'جیمیل' && show1 ? 'msg msg-show' : 'msg msg-hide' }>{acc.msg}</div>
+                                                className={(acc.name === 'Telegram' || acc.name === 'تلگرام') && show ? 'msg msg-show' :( acc.name === 'Gmail' || acc.name === 'جیمیل') && show1 ? 'msg msg-show' : 'msg msg-hide' }>{acc.msg}</div>
                                         </button>
                                 }
                             </div>
