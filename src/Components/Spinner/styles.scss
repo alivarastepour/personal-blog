@@ -25,22 +25,3 @@
   border-top: 4px #3362bb solid;
   border-right: 4px #3362bb solid;
 }
-.temp{
-  color: black;
-}
-.welcome-text{
-  @include glassMorphism;
-  max-width: 600px;
-  height: 80px;
-  border-radius: 12px 12px 0 0;
-  font-size: 1.2rem;
-  padding-left: 10px;
-  padding-right: 10px;
-  position: relative;
-  bottom: 0;
-}
-@media only screen and (max-width: 500px) {
-  .welcome-text{
-    font-size: 0.8rem;
-  }
-}
