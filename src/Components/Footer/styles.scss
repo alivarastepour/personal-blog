@@ -10,7 +10,14 @@
 }
 .info > div {
   display: inline;
+  font-family: "Raleway",'Tanha',  sans-serif;
   padding-right: 5px;
+}
+.dirR{
+  direction: rtl;
+}
+.dirL{
+  direction: ltr;
 }
 .animate {
   animation: x linear 7s infinite;
