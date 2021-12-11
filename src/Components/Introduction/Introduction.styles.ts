@@ -8,10 +8,20 @@ export const Wrapper = styled.div`
   border-radius: 12px;
   font-family: 'Raleway', 'Tanha', sans-serif;
 
-
+  @media only screen and (max-width: 860px){
+    &{
+      padding: 35px;
+    }
+    .details{
+      font-size: 1.9rem ;
+    }
+  }
   @media only screen and (max-width: 750px){
     &{
       padding : 30px ;
+    }
+    .details{
+      font-size: 1.9rem ;
     }
   }
   @media only screen and (max-width: 460px){
@@ -19,7 +29,7 @@ export const Wrapper = styled.div`
       padding: 20px ;
     }
     .details{
-      font-size: 1.65rem ;
+      font-size: 1.58rem ;
     }
   }
 `;
