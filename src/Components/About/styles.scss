@@ -12,6 +12,12 @@
   padding-right: 20px;
   border-radius: 12px;
 }
+.dirR{
+  direction: rtl;
+}
+.dirL{
+  direction: ltr;
+}
 .image {
   width: 33%;
   background-image: url("../../assets/photo_2021-11-21_23-43-14.jpg");
@@ -41,14 +47,23 @@
   .flex-item-About > .card1-body{
     font-size: 1.6rem;
   }
+  .card1-header{
+    font-size: 3rem;
+  }
 }
 @media only screen and (max-width: 460px){
   .flex-item-About > .card1-body{
     font-size: 1.27rem;
   }
+  .card1-header{
+    font-size: 2.8rem;
+  }
 }
 @media only screen and (max-width: 330px){
   .flex-item-About > .card1-body{
-    font-size: 1.20rem;
+    font-size: 1.30rem;
+  }
+  .card1-header{
+    font-size: 2.5rem;
   }
 }
