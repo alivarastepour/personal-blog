@@ -13,3 +13,7 @@ export const SKILLS = [
   { id: 11, title: "Git", value: 4 },
   { id: 12, title: "Linux", value: 4 },
 ];
+export const header = {
+  fa: "مهارت‌ها",
+  en: "skills",
+};
