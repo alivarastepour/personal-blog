@@ -9,8 +9,8 @@ const ContactUs = lazy(() => import("./Components/Contact-us"));
 const Footer = lazy(() => import("./Components/Footer"));
 const Introduction = lazy(() => import("./Components/Introduction/index.tsx"));
 
-const URL =
-  "https://geo.ipify.org/api/v2/country?apiKey=at_vWj6GggURobnxNbvqBwg8heA5ewma";
+// const URL =
+//   "https://geo.ipify.org/api/v2/country?apiKey=at_vWj6GggURobnxNbvqBwg8heA5ewma";
 
 export const languageContext = createContext();
 
@@ -25,7 +25,7 @@ function App() {
 
   const theme = useSelector((state) => state.theme.value)?.toLowerCase();
   useEffect(() => {
-    doFetch();
+    // doFetch();
   }, []);
 
   return (
