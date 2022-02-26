@@ -6,7 +6,7 @@ import { en, fa } from "./Introduction.text";
 import { Fade } from "react-awesome-reveal";
 
 const Introduction = () => {
-  const { language, setLanguage } = useContext(languageContext);
+  const { language } = useContext(languageContext);
   const isPersian = language === "IR";
   const content = isPersian ? fa : en;
   return (
