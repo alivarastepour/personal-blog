@@ -5,6 +5,7 @@ import { styled } from "@mui/material/styles";
 import Rating from "@mui/material/Rating";
 import CircleOutlinedIcon from "@mui/icons-material/CircleOutlined";
 import CircleRoundedIcon from "@mui/icons-material/CircleRounded";
+import { SKILLS } from "./Skills.text";
 
 const Skills = () => {
   const StyledRating = styled(Rating)({
@@ -19,14 +20,24 @@ const Skills = () => {
     <>
       <Wrapper className="container-skills">
         <div className="header-skills display-4">skills</div>
-        <div>
-          <StyledRating
-            precision={0.5}
-            icon={<CircleRoundedIcon />}
-            emptyIcon={<CircleOutlinedIcon color="disabled" />}
-            defaultValue={3}
-            disabled
-          />
+        <div className="flex-skills">
+          {SKILLS.map((skill) => {
+            return (
+              <div className="skill-items">
+                <div className="skill-header">{skill.title}</div>
+                <div>
+                  <StyledRating
+                    key={skill.id}
+                    precision={0.5}
+                    icon={<CircleRoundedIcon color="info" />}
+                    emptyIcon={<CircleOutlinedIcon color="disabled" />}
+                    disabled
+                    value={skill.value}
+                  />
+                </div>
+              </div>
+            );
+          })}
         </div>
       </Wrapper>
     </>
