@@ -8,6 +8,7 @@ const About = lazy(() => import("./Components/About"));
 const ContactUs = lazy(() => import("./Components/Contact-us"));
 const Footer = lazy(() => import("./Components/Footer"));
 const Introduction = lazy(() => import("./Components/Introduction/index.tsx"));
+const Skills = lazy(() => import("./Components/Skills"));
 
 // const URL =
 //   "https://geo.ipify.org/api/v2/country?apiKey=at_vWj6GggURobnxNbvqBwg8heA5ewma";
@@ -36,6 +37,7 @@ function App() {
             <Header />
             <Introduction />
             <About />
+            <Skills />
             <ContactUs />
             <Footer />
           </div>
