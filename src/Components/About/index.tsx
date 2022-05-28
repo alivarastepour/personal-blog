@@ -11,7 +11,7 @@ const About = () => {
   const content = isPersian ? fa : en;
   return (
     <>
-      <Fade direction="up" delay={50} fraction={0.7} triggerOnce>
+      <Fade direction="up" delay={50} triggerOnce>
         <Wrapper id="about" className={`container flex-container-about`}>
           <div className={`flex-item-About ${isPersian ? "dirR" : "dirL"}`}>
             <div className="card1-header">{content["Title"]}</div>
