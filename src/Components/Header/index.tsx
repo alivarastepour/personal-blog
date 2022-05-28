@@ -39,7 +39,7 @@ const Header = () => {
             <button className="flex-item button">
               <a
                 rel="noreferrer"
-                href="https://drive.google.com/file/d/1-brDEJyYatceHoFlw_SyJku0VR0Ix0w0/view?usp=sharing"
+                href="https://drive.google.com/file/d/1D6oq27AudKRN9-zEpcUKLsA_-cTxUTIW/view?usp=sharing"
                 target="_blank"
               >
                 {content["Resume"]}
