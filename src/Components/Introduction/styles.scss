@@ -3,8 +3,11 @@
   @include glassMorphism;
 }
 .details {
-  font-size: 2.1rem;
+  font-size: 2rem;
   text-align: justify;
+}
+.header {
+  text-align: center;
 }
 .link {
   color: inherit;
@@ -12,9 +15,21 @@
 .link:hover {
   color: inherit;
 }
-.dirR{
+.dirR {
   direction: rtl;
 }
-.dirL{
+.dirL {
   direction: ltr;
+}
+
+@media only screen and (max-width: 520px) {
+  .header {
+    font-size: 2rem;
+  }
+  .details {
+    font-size: 1.3rem;
+  }
+  .image {
+    min-width: 200px !important;
+  }
 }

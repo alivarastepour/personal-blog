@@ -1,8 +1,12 @@
 export const en = {
-    'Title':'Welcome to my personal blog !',
-    'Paragraph':'Hi everyone. My name is Ali Varaste Pour. I am a student at Shahid Beheshti University. I spend my time mostly on learning new stuff, reading books and helping others as much as i can; As i am young and passionate, im trying to find my area of expertise; but you know, it ain\'t easy.  '
-}
+  Title: "Welcome to my personal blog!",
+  Paragraph:
+    "Hi. Hope you've enjoyed your day so far. My name is Ali Varaste Pour; I am currently a student at Shahid Beheshti University of Tehran. My interest in designing applications has motivated me to spend some of my time learning related topics. Since I like Front-End development so much, I have decided to choose my current career path as a web Front-End developer; which is a hard and challenging path, but I like it:)",
+};
 export const fa = {
-    'Title':'روز و روزگار خوش!',
-    'Paragraph':'سلام,من علی وارسته پور هستم;این روزا دانشجوی رشته مهندسی کامپیوتر در دانشگاه شهید بهشتی تهرانم.روز هام بیشتر به یادگیری مطالب جدید در حوزه تکنولوژی, کتاب خوندن و کمک کردن به بقیه البته تا جایی که بتونم سپری میشه. علاقه زیادم به برنامه نویسی باعث شده تا همیشه دنبال پیدا کردن دایره شایستگیم تو این دنیای بی پایان باشم; که خب, کار زمان بریه.'
-}
+  Title: "سلامی چو بوی خوش آشنایی",
+  Paragraph:
+    "سلام، روزتون بخیر. من علی وارسته‌پور هستم. یه دانشجوی سال سومی تو دانشگاه شهید بهشتی تهران. علاقه زیادم به طراحی اپلیکیشن‌ها باعث شده تا من بخشی از زمانم رو به یادگیری مفاهیم مرتبط اختصاص بدم. ازونجایی که اشتیاق زیادی به برنامه‌نویسی فرانت‌اند داشتم و دارم، تصمیم گرفتم که مسیر برنامه‌نویسی فرانت‌اند وب رو در پیش بگیرم؛ که خب مسیر پرچالش و طولانی‌ایه، ولی دوسش دارم:)",
+};
+
+//

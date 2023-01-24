@@ -11,19 +11,19 @@ const Introduction = () => {
   const content = isPersian ? fa : en;
   return (
     <>
-      <Fade direction="up" delay={50} triggerOnce>
-        <Wrapper
-          id="intro"
-          className={`container glass grid-container ${
-            isPersian ? "dirR" : "dirL"
-          }`}
-        >
-          <div className="grid-item content">
-            <h1 className="display-2 header">{content["Title"]}</h1>
-            <div className="details">{content["Paragraph"]}</div>
-          </div>
-        </Wrapper>
-      </Fade>
+      {/* <Fade direction="up" delay={50} triggerOnce> */}
+      <Wrapper
+        id="intro"
+        className={`container glass grid-container ${
+          isPersian ? "dirR" : "dirL"
+        }`}
+      >
+        <div className="grid-item content">
+          <h1 className="display-2 header">{content["Title"]}</h1>
+          <div className="details">{content["Paragraph"]}</div>
+        </div>
+      </Wrapper>
+      {/* </Fade> */}
     </>
   );
 };
