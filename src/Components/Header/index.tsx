@@ -39,7 +39,7 @@ const Header = () => {
             <button className="flex-item button">
               <a
                 rel="noreferrer"
-                href="https://drive.google.com/file/d/1D6oq27AudKRN9-zEpcUKLsA_-cTxUTIW/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Q155BAtxajoKFdAc2bk-e9sWgFp1oJfb/view?usp=sharing"
                 target="_blank"
               >
                 {content["Resume"]}
@@ -65,7 +65,7 @@ const Header = () => {
               </button>
             </div>
           </div>
-          <div className="drop-down holder-r">
+          {/* <div className="drop-down holder-r">
             <button className="dropbtn flex-item button">
               {content["Theme"]["Title"]}
             </button>
@@ -89,7 +89,7 @@ const Header = () => {
                 {content["Theme"]["Default"]}
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </Wrapper>
     </>
