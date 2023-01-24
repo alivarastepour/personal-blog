@@ -6,17 +6,17 @@
 }
 .info {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 .info > div {
   display: inline;
-  font-family: "Raleway",'Tanha',  sans-serif;
+  font-family: "Raleway", "Tanha", sans-serif;
   padding-right: 5px;
 }
-.dirR{
+.dirR {
   direction: rtl;
 }
-.dirL{
+.dirL {
   direction: ltr;
 }
 .animate {
@@ -29,4 +29,10 @@
       transform: rotate(360deg);
     }
   }
+}
+
+.footer-logo {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 }
