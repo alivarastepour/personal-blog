@@ -14,62 +14,60 @@ const ContactUs = () => {
   const content = isPersian ? fa : en;
   return (
     <>
-      <Fade direction="up" delay={50} fraction={0.7} triggerOnce>
-        <Wrapper id="contact-us" className="container glass-contact-us">
-          <div className="container-body-flex">
-            <div className="container-header">
-              {isPersian ? "با من در ارتباط باش" : "Let's stay in touch"}
-            </div>
-            {content.map((acc) => {
-              return (
-                <div key={acc.id} className="container-flex-item">
-                  <div className="socialMedia-wrapper">
-                    {acc.newTab ? (
-                      <a href={acc.link} rel="noreferrer" target="_blank">
-                        <div>
-                          <i className={acc.class_name}></i>
-                        </div>
-                        <div className="socialMedia-name">{acc.name}</div>
-                      </a>
-                    ) : (
-                      <button
-                        onClick={() =>
-                          handleCopy(
-                            acc.link,
-                            acc.name === "Telegram" || acc.name === "تلگرام"
-                              ? setShow
-                              : setShow1
-                          )
+      {/* <Fade direction="up" delay={50} fraction={0.7} triggerOnce> */}
+      <Wrapper id="contact-us" className="container glass-contact-us">
+        <div className="container-body-flex">
+          <div className="container-header">
+            {isPersian ? "با من در ارتباط باش" : "Let's stay in touch"}
+          </div>
+          {content.map((acc) => {
+            return (
+              <div key={acc.id} className="container-flex-item">
+                <div className="socialMedia-wrapper">
+                  {acc.newTab ? (
+                    <a href={acc.link} rel="noreferrer" target="_blank">
+                      <div>
+                        <i className={acc.class_name}></i>
+                      </div>
+                      <div className="socialMedia-name">{acc.name}</div>
+                    </a>
+                  ) : (
+                    <button
+                      onClick={() =>
+                        handleCopy(
+                          acc.link,
+                          acc.name === "Telegram" || acc.name === "تلگرام"
+                            ? setShow
+                            : setShow1
+                        )
+                      }
+                    >
+                      <div>
+                        <i className={acc.class_name}></i>
+                      </div>
+                      <div className="socialMedia-name">{acc.name}</div>
+                      <div
+                        className={
+                          (acc.name === "Telegram" || acc.name === "تلگرام") &&
+                          show
+                            ? "msg msg-show"
+                            : (acc.name === "Gmail" || acc.name === "جیمیل") &&
+                              show1
+                            ? "msg msg-show"
+                            : "msg msg-hide"
                         }
                       >
-                        <div>
-                          <i className={acc.class_name}></i>
-                        </div>
-                        <div className="socialMedia-name">{acc.name}</div>
-                        <div
-                          className={
-                            (acc.name === "Telegram" ||
-                              acc.name === "تلگرام") &&
-                            show
-                              ? "msg msg-show"
-                              : (acc.name === "Gmail" ||
-                                  acc.name === "جیمیل") &&
-                                show1
-                              ? "msg msg-show"
-                              : "msg msg-hide"
-                          }
-                        >
-                          {acc.msg}
-                        </div>
-                      </button>
-                    )}
-                  </div>
+                        {acc.msg}
+                      </div>
+                    </button>
+                  )}
                 </div>
-              );
-            })}
-          </div>
-        </Wrapper>
-      </Fade>
+              </div>
+            );
+          })}
+        </div>
+      </Wrapper>
+      {/* </Fade> */}
     </>
   );
 };
