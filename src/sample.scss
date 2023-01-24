@@ -1,4 +1,4 @@
-@mixin background{
+@mixin background {
   width: 100%;
   background-size: 200% 200%;
   background-attachment: fixed;
@@ -32,30 +32,30 @@
 @mixin colorEffectLight {
   background-image: linear-gradient(
     to bottom right,
-    #ECF2F9 0%,
-    #C8D9EB 40%,
-    #F0D9DA 60%,
-    #F9ECEC 100%
+    #ecf2f9 0%,
+    #c8d9eb 40%,
+    #f0d9da 60%,
+    #f9ecec 100%
   );
 }
 
-.App-light{
+.App-light {
   @include background;
   @include colorEffectLight;
 }
-.App-dark{
+.App-dark {
   @include background;
   @include colorEffectDark;
 }
-.App-default{
+.App-default {
   @include background;
   @include colorEffectDefault;
 }
 @font-face {
   font-family: Tanha;
-  src: url('./assets/font/Tanha.eot');
-  src: url('./assets/font/Tanha.eot?#iefix') format('embedded-opentype'),
-       url('./assets/font/Tanha.woff') format('woff'),
-       url('./assets/font/Tanha.ttf') format('truetype');
+  src: url("./assets/font/Tanha.eot");
+  src: url("./assets/font/Tanha.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/Tanha.woff") format("woff"),
+    url("./assets/font/Tanha.ttf") format("truetype");
   font-weight: normal;
 }

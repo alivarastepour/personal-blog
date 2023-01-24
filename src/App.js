@@ -21,7 +21,7 @@ function App() {
   const doFetch = async () => {
     await fetch(URL)
       .then((a) => a.json())
-      .then((b) => setLanguage(b.location.country));
+      .then((b) => setLanguage(b?.location?.country));
   };
 
   const theme = useSelector((state) => state.theme.value)?.toLowerCase();
@@ -39,7 +39,7 @@ function App() {
             <About />
             <Skills />
             <ContactUs />
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </languageContext.Provider>
       </Suspense>
