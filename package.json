@@ -2,6 +2,7 @@
   "name": "personal-blog",
   "version": "0.1.0",
   "private": true,
+  "homepage":"http://alivarastepour.github.io",
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
@@ -30,7 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +55,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.15",
+    "gh-pages": "^5.0.0",
     "sass": "^1.43.5"
   }
 }
