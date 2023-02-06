@@ -65,31 +65,11 @@ const Header = () => {
               </button>
             </div>
           </div>
-          {/* <div className="drop-down holder-r">
-            <button className="dropbtn flex-item button">
-              {content["Theme"]["Title"]}
+          <div className="holder-r">
+            <button className="flex-item button">
+              <a href="#">{content["Blog"]}</a>
             </button>
-            <div className="drop-down-content t">
-              <button
-                onClick={() => dispatch(changeTheme("LIGHT"))}
-                className="drop-down-button light"
-              >
-                {content["Theme"]["Light"]}
-              </button>
-              <button
-                onClick={() => dispatch(changeTheme("DARK"))}
-                className="drop-down-button dark"
-              >
-                {content["Theme"]["Dark"]}
-              </button>
-              <button
-                onClick={() => dispatch(changeTheme("DEFAULT"))}
-                className="drop-down-button default"
-              >
-                {content["Theme"]["Default"]}
-              </button>
-            </div>
-          </div> */}
+          </div>
         </div>
       </Wrapper>
     </>

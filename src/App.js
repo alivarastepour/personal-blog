@@ -2,14 +2,13 @@ import { createContext, lazy, Suspense, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import "./sample.scss";
 import Spinner from "./Components/Spinner";
-
 const Header = lazy(() => import("./Components/Header"));
 const About = lazy(() => import("./Components/About"));
 const ContactUs = lazy(() => import("./Components/Contact-us"));
-const Footer = lazy(() => import("./Components/Footer"));
+// const Footer = lazy(() => import("./Components/Footer"));
 const Introduction = lazy(() => import("./Components/Introduction/index.tsx"));
 const Skills = lazy(() => import("./Components/Skills"));
-
+import { Outlet } from "react-router-dom";
 const URL =
   "https://geo.ipify.org/api/v2/country?apiKey=at_vWj6GggURobnxNbvqBwg8heA5ewma";
 
@@ -34,6 +33,7 @@ function App() {
       <Suspense fallback={<Spinner />}>
         <languageContext.Provider value={{ language, setLanguage }}>
           <div className={`App ${theme ? `App-${theme}` : `App-default`}`}>
+            <Outlet />
             <Header />
             <Introduction />
             <About />
