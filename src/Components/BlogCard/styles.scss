@@ -1,0 +1,14 @@
+@import "../../assets/general-styles";
+
+.blog-card {
+  @include glassMorphism;
+  font-family: "Raleway", "Tanha", sans-serif;
+  border-radius: 10px;
+  &:hover {
+    transition: 0.3s;
+    transform: translateY(0.2rem);
+  }
+  &:not(:hover) {
+    transition: 0.3s;
+  }
+}
