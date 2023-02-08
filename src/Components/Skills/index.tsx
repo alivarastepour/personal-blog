@@ -7,7 +7,7 @@ import "./styles.scss";
 import { styled } from "@mui/material/styles";
 import Rating from "@mui/material/Rating";
 
-import { languageContext } from "../../App";
+import { languageContext } from "../../AppWrapper";
 
 import {
   header,

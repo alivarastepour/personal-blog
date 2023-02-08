@@ -4,8 +4,9 @@ import { useContext } from "react";
 import "./styles.scss";
 import { Wrapper } from "./Header.styles";
 import { changeTheme } from "../../globalStates/slice";
-import { languageContext } from "../../App";
+import { languageContext } from "../../AppWrapper";
 import { en, fa } from "./Header.text";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { language, setLanguage } = useContext(languageContext);
@@ -22,7 +23,8 @@ const Header = () => {
         >
           <div className="holder-r">
             <button className="flex-item button">
-              <a href="#intro">{content["Home"]}</a>
+              {/* <a href="#intro"></a> */}
+              <Link to="/">{content["Home"]}</Link>
             </button>
           </div>
           <div className="holder-r">

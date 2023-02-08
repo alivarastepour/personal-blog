@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Wrapper } from "./About.styles";
 import "./styles.scss";
-import { languageContext } from "../../App";
+import { languageContext } from "../../AppWrapper";
 import { en, fa } from "./About.text";
 import { Fade } from "react-awesome-reveal";
 import image from "../../assets/photo_2021-11-21_23-43-14.jpg";

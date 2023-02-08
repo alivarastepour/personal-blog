@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Wrapper } from "./Footer.styles";
 import "./styles.scss";
-import { languageContext } from "../../App";
+import { languageContext } from "../../AppWrapper";
 import logo from "../../assets/logo.png";
 const Footer = () => {
   const { language, setLanguage } = useContext(languageContext);

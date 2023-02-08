@@ -1,12 +1,13 @@
 import { useContext } from "react";
 import { Wrapper } from "./Introduction.styles";
 import "./styles.scss";
-import { languageContext } from "../../App";
+import { languageContext } from "../../AppWrapper";
 import { en, fa } from "./Introduction.text";
 import { Fade } from "react-awesome-reveal";
 
 const Introduction = () => {
   const { language } = useContext(languageContext);
+
   const isPersian = language === "IR";
   const content = isPersian ? fa : en;
   return (

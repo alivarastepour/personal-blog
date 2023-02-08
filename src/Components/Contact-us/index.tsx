@@ -3,7 +3,7 @@ import { useState, useContext } from "react";
 import "./styles.scss";
 import { en, fa } from "./socialMedia-data";
 import { handleCopy } from "./copy-to-clipboard";
-import { languageContext } from "../../App";
+import { languageContext } from "../../AppWrapper";
 import { Fade } from "react-awesome-reveal";
 
 const ContactUs = () => {
