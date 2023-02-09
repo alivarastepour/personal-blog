@@ -1,0 +1,4 @@
+@import "../../assets/general-styles.scss";
+.blog-article {
+  @include glassMorphism;
+}
