@@ -12,7 +12,7 @@ const Blog = () => {
         title: "به زودی...",
         summery: null,
         urlPath: null,
-        id: index,
+        id: index + 10,
       });
     }
   }
