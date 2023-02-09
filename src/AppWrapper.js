@@ -4,6 +4,7 @@ import Spinner from "./Components/Spinner";
 import { useSelector } from "react-redux";
 import { useState, Suspense, createContext } from "react";
 import Blog from "./Components/Blog";
+import BlogArticle from "./Components/BlogArticle/BlogArticle";
 export const languageContext = createContext();
 
 const AppWrapper = () => {
@@ -15,12 +16,12 @@ const AppWrapper = () => {
       element: <Homepage />,
     },
     {
-      path: "blog",
-      element: <Blog />,
+      path: "/blog/:blogID",
+      element: <BlogArticle />,
     },
     {
-      path: "blog/:blogID",
-      element: <div>salam1</div>,
+      path: "blog",
+      element: <Blog />,
     },
   ]);
 
