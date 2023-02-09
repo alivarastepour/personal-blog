@@ -69,7 +69,8 @@ const Header = () => {
           </div>
           <div className="holder-r">
             <button className="flex-item button">
-              <a href="#">{content["Blog"]}</a>
+              <Link to="/blog">{content["Blog"]}</Link>
+              {/* <a href="#"></a > */}
             </button>
           </div>
         </div>
